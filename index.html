@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,11 +8,296 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Natura</title>
 </head>
+
 <body>
     <div class="container">
         <header class="header">
-            <div class="header-logo"></div>
+            <div class="header-logo">
+                <img src='./assets/img/icon/logo.svg' alt="">
+            </div>
+            <div class="header-menu">
+                <div class="header-menu_item">
+                    <img src="./assets/img/icon/arm.svg" alt="">
+                    <span>Гостиная</span>
+                </div>
+                <div class="header-menu_item">
+                    <img src="./assets/img/icon/Kitchen.svg" alt="">
+                    <span>Кухня</span>
+                </div>
+                <div class="header-menu_item">
+                    <img src="./assets/img/icon/child.svg" alt="">
+                    <span>Детская</span>
+                </div>
+                <div class="header-menu_item">
+                    <img src="./assets/img/icon/Bath.svg" alt="">
+                    <span>Ванная</span>
+                </div>
+                <div class="header-menu_item">
+                    <img src="./assets/img/icon/bed.svg" alt="">
+                    <span>Спальня</span>
+                </div>
+            </div>
+            <div class="header-options">
+                <div class="header-options_search">
+                    <img src="./assets/img/icon/search.svg" alt="">
+                </div>
+                <div class="header-options_wishlist">
+                    <img src="./assets/img/icon/wishlist.svg" alt="">
+                </div>
+                <div class="header-options_burger">
+                    <img src="./assets/img/icon/burger.svg" alt="">
+                </div>
+            </div>
         </header>
+        <main class="main">
+            <div class="main-filtres">
+                <div class="main-filtres_title">Все товары</div>
+                <div class="main-filtres_category">
+                    <div class="main-filtres_category_title">Вид ткани</div>
+                    <div class="main-filtres_category_items">
+                        <div class="main-filtres_category_items_item">
+                            <input type="checkbox" id='сalico'>
+                            <label class="main-filtres_category_items_item_text" for="сalico">Бязь</label>
+                            <span>3</span>
+                        </div>
+                        <div class="main-filtres_category_items_item">
+                            <input type="checkbox" id='satin'>
+                            <label class="main-filtres_category_items_item_text" for="satin">Сатин</label>
+                            <span>9</span>
+                        </div>
+                        <div class="main-filtres_category_items_item">
+                            <input type="checkbox" id='poplin'>
+                            <label class="main-filtres_category_items_item_text" for="poplin">Поплин</label>
+                            <span>1</span>
+                        </div>
+                        <div class="main-filtres_category_items_item">
+                            <input type="checkbox" id='ranfors'>
+                            <label class="main-filtres_category_items_item_text" for="ranfors">Ранфорс</label>
+                            <span>34</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-filtres_category">
+                    <div class="main-filtres_category_title">Размер</div>
+                    <div class="main-filtres_category_items">
+                        <div class="main-filtres_category_items_item">
+                            <input type="checkbox" id='1'>
+                            <label class="main-filtres_category_items_item_text" for="1">1,5 сп</label>
+                            <span>3</span>
+                        </div>
+                        <div class="main-filtres_category_items_item">
+                            <input type="checkbox" id='2'>
+                            <label class="main-filtres_category_items_item_text" for="2">2 сп</label>
+                            <span>9</span>
+                        </div>
+                        <div class="main-filtres_category_items_item">
+                            <input type="checkbox" id='3'>
+                            <label class="main-filtres_category_items_item_text" for="3">Евро</label>
+                            <span>1</span>
+                        </div>
+                        <div class="main-filtres_category_items_item">
+                            <input type="checkbox" id='4'>
+                            <label class="main-filtres_category_items_item_text" for="4">Семейный</label>
+                            <span>34</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-filtres_category">
+                    <div class="main-filtres_category_title">Дизайн</div>
+                    <div class="main-filtres_category_items">
+                        <div class="main-filtres_category_items_item">
+                            <input type="checkbox" id='color'>
+                            <label class="main-filtres_category_items_item_text" for="color">Цвет</label>
+                            <span>3</span>
+                        </div>
+                        <div class="main-filtres_category_items_item">
+                            <input type="checkbox" id='geometry'>
+                            <label class="main-filtres_category_items_item_text" for="geometry">Геометрия</label>
+                            <span>9</span>
+                        </div>
+                        <div class="main-filtres_category_items_item">
+                            <input type="checkbox" id='abstraction'>
+                            <label class="main-filtres_category_items_item_text" for="abstraction">Абстракция</label>
+                            <span>1</span>
+                        </div>
+                        <div class="main-filtres_category_items_item">
+                            <input type="checkbox" id='animal'>
+                            <label class="main-filtres_category_items_item_text" for="animal">Animal</label>
+                            <span>34</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-filtres_category">
+                    <div class="main-filtres_category_title">Тип</div>
+                    <div class="main-filtres_category_items">
+                        <div class="main-filtres_category_items_item">
+                            <input type="checkbox" id='set'>
+                            <label class="main-filtres_category_items_item_text" for="set">Комплект</label>
+                            <span>3</span>
+                        </div>
+                        <div class="main-filtres_category_items_item">
+                            <input type="checkbox" id='duvet'>
+                            <label class="main-filtres_category_items_item_text" for="duvet">Пододеяльник</label>
+                            <span>9</span>
+                        </div>
+                        <div class="main-filtres_category_items_item">
+                            <input type="checkbox" id='bedsheet'>
+                            <label class="main-filtres_category_items_item_text" for="bedsheet">Простыня</label>
+                            <span>1</span>
+                        </div>
+                        <div class="main-filtres_category_items_item">
+                            <input type="checkbox" id='pillowcase'>
+                            <label class="main-filtres_category_items_item_text" for="pillowcase">Комплект наволочек</label>
+                            <span>34</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main-content">
+                <div class="main-content-crumb">
+                    <span class="main-content-crumb_item">Главная</span>
+                    <span class="main-content-crumb_item separator"> / </span>
+                    <span class="main-content-crumb_item">Каталог</span>
+                    <span class="main-content-crumb_item separator"> / </span>
+                    <span class="main-content-crumb_item">Спальня</span>
+                    <span class="main-content-crumb_item separator"> / </span>
+                    <span class="main-content-crumb_item">Постельное бельё</span>
+                </div>
+                <div class="main-content-title">
+                    <span>Постельное бельё</span>
+                    <img src="./assets/img/icon/bed.svg" alt="">
+                </div>
+                <div class="main-content-descr">
+                    Правомочен микрохроматический интервал традиционно трансформирует комплексный голос, 
+                    что несомненно приведет нас к истине вектор переворачивает аккорд. Скачок функции, 
+                    как бы это ни казалось парадоксальным, начинает голос наибольшее и наименьшее значения функции вызывает ряд тейлора. 
+                    Сумма ряда концентрирует миксолидийский нонаккорд, что и требовалось доказать.
+                </div>
+                <div class="main-content-filtres">
+                    <div class="main-content-filtres-sorting">
+                        <button class="">По популярности</button>
+                        <button class="btn_active">Материал</button>
+                        <button class="">Размер</button>
+                    </div>
+                    <div class="main-content-filtres-product__count">
+                        1 120 товаров
+                    </div>
+                </div>
+                <div class="main-content-cards">
+                    <div class="main-content-cards-card">
+                        <div class="main-content-cards-card-slider">
+                            <img src="./assets/img/img1.png" alt="">
+                        </div>
+                        <div class="main-content-cards-card-descr">
+                            <div>КПБ «Мальва»</div>
+                            <span>Рис. 5676</span>
+                        </div>
+                    </div>
+                    <div class="main-content-cards-card">
+                        <div class="main-content-cards-card-slider">
+                            <img src="./assets/img/img2.png" alt="">
+                        </div>
+                        <div class="main-content-cards-card-descr">
+                            <div>КПБ «Мальва»</div>
+                            <span>Рис. 5676</span>
+                        </div>
+                    </div>
+                    <div class="main-content-cards-card">
+                        <div class="main-content-cards-card-slider">
+                            <img src="./assets/img/img3.png" alt="">
+                        </div>
+                        <div class="main-content-cards-card-descr">
+                            <div>КПБ «Мальва»</div>
+                            <span>Рис. 5676</span>
+                        </div>
+                    </div>
+                    <div class="main-content-cards-card">
+                        <div class="main-content-cards-card-slider">
+                            <img src="./assets/img/img4.png" alt="">
+                        </div>
+                        <div class="main-content-cards-card-descr">
+                            <div>КПБ «Мальва»</div>
+                            <span>Рис. 5676</span>
+                        </div>
+                    </div>
+                    <div class="main-content-cards-card">
+                        <div class="main-content-cards-card-slider">
+                            <img src="./assets/img/img5.png" alt="">
+                        </div>
+                        <div class="main-content-cards-card-descr">
+                            <div>КПБ «Мальва»</div>
+                            <span>Рис. 5676</span>
+                        </div>
+                    </div>
+                    <div class="main-content-cards-card">
+                        <div class="main-content-cards-card-slider">
+                            <img src="./assets/img/img6.png" alt="">
+                        </div>
+                        <div class="main-content-cards-card-descr">
+                            <div>КПБ «Мальва»</div>
+                            <span>Рис. 5676</span>
+                        </div>
+                    </div>
+                    <div class="main-content-cards-card">
+                        <div class="main-content-cards-card-slider">
+                            <img src="./assets/img/img1.png" alt="">
+                        </div>
+                        <div class="main-content-cards-card-descr">
+                            <div>КПБ «Мальва»</div>
+                            <span>Рис. 5676</span>
+                        </div>
+                    </div>
+                    <div class="main-content-cards-card">
+                        <div class="main-content-cards-card-slider">
+                            <img src="./assets/img/img2.png" alt="">
+                        </div>
+                        <div class="main-content-cards-card-descr">
+                            <div>КПБ «Мальва»</div>
+                            <span>Рис. 5676</span>
+                        </div>
+                    </div>
+                    <div class="main-content-cards-card">
+                        <div class="main-content-cards-card-slider">
+                            <img src="./assets/img/img3.png" alt="">
+                        </div>
+                        <div class="main-content-cards-card-descr">
+                            <div>КПБ «Мальва»</div>
+                            <span>Рис. 5676</span>
+                        </div>
+                    </div>
+                    <div class="main-content-cards-card">
+                        <div class="main-content-cards-card-slider">
+                            <img src="./assets/img/img4.png" alt="">
+                        </div>
+                        <div class="main-content-cards-card-descr">
+                            <div>КПБ «Мальва»</div>
+                            <span>Рис. 5676</span>
+                        </div>
+                    </div>
+                    <div class="main-content-cards-card">
+                        <div class="main-content-cards-card-slider">
+                            <img src="./assets/img/img5.png" alt="">
+                        </div>
+                        <div class="main-content-cards-card-descr">
+                            <div>КПБ «Мальва»</div>
+                            <span>Рис. 5676</span>
+                        </div>
+                    </div>
+                    <div class="main-content-cards-card">
+                        <div class="main-content-cards-card-slider">
+                            <img src="./assets/img/img6.png" alt="">
+                        </div>
+                        <div class="main-content-cards-card-descr">
+                            <div>КПБ «Мальва»</div>
+                            <span>Рис. 5676</span>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </main>
     </div>
 </body>
+
 </html>
